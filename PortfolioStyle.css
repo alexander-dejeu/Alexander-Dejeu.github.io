@@ -131,6 +131,14 @@ div.projectBox:hover .projectBody p{
     right: 30px;
 }
 
+.item-detail .title-button-wrapper{
+    float: left;
+}
+
+.item-detail .header .title{
+    position: relative;
+}
+
 .item-detail .header .icon{
     height: 160px;
     width: 160px;
@@ -138,6 +146,7 @@ div.projectBox:hover .projectBody p{
     margin: 25px;
     display: flex;
     align-items: center;
+    float: left;
     
 }
 .item-detail .header .icon img{
@@ -147,12 +156,32 @@ div.projectBox:hover .projectBody p{
 }
 
 .item-detail .get-dropdown .button{
-    background-color: #4CAF50;
+/*    float: left;*/
+    background-color: #4A90E2;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    font-weight: bolder;
+    height: 47px;
+    width: 100px;
+    font-size: 23px;
     border: none;
     cursor: pointer;
+}
+
+.item-detail .get-dropdown .details{
+    float: right;
+    margin-left: 1px;
+    background-color: #4A90E2;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 35px;
+    height: 47px;
+    cursor: pointer;
+}
+.item-detail .get-dropdown .details img{
+    margin-top: 21px;
+    margin-left: 11px;
 }
 
 .item-detail .get-dropdown{
@@ -164,21 +193,27 @@ div.projectBox:hover .projectBody p{
 .item-detail .get-dropdown .content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #4689D7;
+    margin-top: 1px;
+    
+    width: 100%;
+/*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
 }
 
 /* Links inside the dropdown */
 .item-detail .get-dropdown .content a {
-    color: black;
+    color: white;
+    
     padding: 12px 16px;
-    text-decoration: none;
+    text-decoration:none;
     display: block;
 }
 
 /* Change color of dropdown links on hover */
-.item-detail .get-dropdown .content a:hover {background-color: #f1f1f1}
+.item-detail .get-dropdown .content a:hover {
+/*    background-color: #f1f1f1;*/
+    text-decoration: underline;
+}
 
 /* Show the dropdown menu on hover */
 .item-detail .get-dropdown:hover .content {
@@ -187,7 +222,12 @@ div.projectBox:hover .projectBody p{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .item-detail .get-dropdown:hover .button {
-    background-color: #3e8e41;
+/*.93%    background-color: #4586D2;*/
+    background-color: #4689D7; 
+}
+.item-detail .get-dropdown:hover .details {
+/*.93% background-color: #4586D2;*/
+    background-color: #4689D7; 
 }
 
 
@@ -232,6 +272,40 @@ div.projectBox:hover .projectBody p{
     width: 33%;
     background-color: peru;
     float: left;
+    height: 100%;
     
 }
+
+.item-detail .support{
+    background-color: dodgerblue;
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    right: 70px;
+    
+}
+.item-detail .button-container{
+    height: 49px;
+    align-content: center;
+}
+.item-detail .button-container .support-button{
+    width: 95px;
+    float: left;
+    height: 100%;
+    border-radius: 5px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+.item-detail .button-container .support-button#twitter{
+    background-color: #30A1ED;
+}
+.item-detail .button-container .support-button#facebook{
+    background-color: #3F5699;
+}
+.item-detail .button-container .support-button#github{
+    background-color: #3D6BBF;
+}
+
+
+
 
