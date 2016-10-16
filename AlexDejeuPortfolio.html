@@ -14,7 +14,7 @@
         <div class = "intro">
         </div>
         
-        <div class = "portfolio">
+        <div class = "portfolio" id = "portfolio">
             <div class="portfolioTitle">
                 <h1>Portfolio</h1>
                 <div class="line"> </div>
@@ -42,20 +42,8 @@
 
             </div>
 
-            <div class = "projectBox">
-                <div class ="projectHeader">
-                    <h1>My Visual Partner</h1>
-                    <p>September 2016</p>
-                </div>
-                <div class ="projectBody">
-                    <p>You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.</p>
-                </div>
-
-                <div class = "projectFooter">
-                    <img src="Images/appleLogo.svg" alt="Apple Logo" height="20">
-                </div>
-
-            </div>
+           <!-- Project Box -->
+            
         </div>
         
         <div class="item-detail">
@@ -137,9 +125,31 @@
                 </div>
             </div>
         </div>
+        
+        
+        <!-- Templates *****************************************************-->
+        <script id="project-template" type ="text/x-handlebars-template">
+             <div class = "projectBox">
+                 <a href = "details-{{id}}" class ="project-link">
+                    <div class ="projectHeader">
+                        <h1>{{title}}</h1>
+                        <p>{{date}}</p>
+                    </div>
+                    <div class ="projectBody">
+                        <p>{{description}}</p>
+                    </div>
+
+                    <div class = "projectFooter">
+                        <img src="Images/{{logo}}.svg" alt="Apple Logo" height="20">
+                    </div>
+                </a>
+            </div>
+        </script>
+        <!-- Templates *****************************************************-->
     
         
         <!-- JS HERE! -->
+        <script src="js/jquery-2.0.3.min.js"></script>
         <script src ="js/handlebars-v4.0.5.js"></script>
         
         <script src ="js/data.js"></script>

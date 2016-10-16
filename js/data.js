@@ -1,7 +1,9 @@
 var data = [
     {id: 1,
-     name: "My Visual Partner",
-     image: "images/01.jpg"
+     title: "IT worked!!",
+     date: "September 2016",
+     description: "You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.",
+     logo: "appleLogo"
     }, 
     {
         
