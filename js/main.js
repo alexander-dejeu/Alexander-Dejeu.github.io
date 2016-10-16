@@ -3,10 +3,13 @@
 var projectSource = $("#project-template").html();
 var projectTemplate = Handlebars.compile(projectSource);
 
+var projectDetailSource = $("#project-detail-template").html();
+var projectDetailTemplate = Handlebars.compile(projectDetailSource)
+
 for (var i in data) {
     var project = projectTemplate(data[i]);
-    console.log(i);
     $(".portfolio").append(project);
+    $("body").append(projectDetailTemplate(data[i]));
 } 
 
 // ------------------------------------------------------------
@@ -18,6 +21,6 @@ $(".project-link").click(function(event){
     event.preventDefault();
     console.log("Clicked");
     var id = $(this).attr("href");
-    
+    console.log(id);
     $(id).addClass("show");
                         });

@@ -115,6 +115,10 @@ div.projectBox:hover .projectBody p{
     width: calc(100%-50);
     height: 600px;
     display: none;
+    position: absolute;
+    left: 0;
+    top: 60px;
+/*    display: block;*/
     margin: 0px 25px 0px 25px;
 }
 .item-detail.show{

@@ -46,90 +46,10 @@
             
         </div>
         
-        <div class="item-detail" id="item-detail-1">
-            <div class="header">
-                <p class="date">September 2015</p>
-                <div class="icon">
-                    <img src="Images/appleLogo.svg" alt="Apple Logo">
-                </div>
-                
-                <div class="title-button-wrapper">
-                    <div class="title">
-                        <h1>Title</h1>
-                        <p>Short Tag Line</p>
-                    </div>
-                    <div class="get-dropdown">
-                        <button class="button">GET IT</button>
-                        <div class="content">
-                            <a href="#">Website</a>
-                            <a href="#">App Store</a>
-                        </div>
-                        <div class ="details">
-                            <img src ="Images/triangle.svg" alt = "Triangle">
-                        </div>
-                    </div>        
-                </div>
-                
-                <div class="support">
-                    <p>Support Us</p>
-                    <div class="button-container">
-                        <div class="support-button" id="facebook">
-                            <a href ="Google.com">
-                                <img src="Images/facebook-logo.svg" alt="Facebook Logo">
-                            </a>
-                        </div>
-                        <div class="support-button" id="twitter">
-                            <img src="Images/twitter-logo.svg" alt="Twitter Logo">
-                        </div>
-                        <div class="support-button" id="github">
-                            <img src="Images/github-logo.svg" alt="Github Logo">
-                        </div>
-                    </div>
-                
-                </div>
-                
-
-            </div>
-            
-            
-            <div class="tech-used">
-                <div class="tag-container">
-                    <p>Tech Used:</p>
-                    <div class="tag">Swift</div>
-                    <div class="tag">iOS</div>
-                    <div class="tag">Mobile</div>
-                </div>
-            </div>
-            
-            
-            <div class="details">
-                <div class="screenshots">
-                    <div class ="scrollView">
-                        <a href="assets/work/1.jpg"><img src="http://placekitten.com/200/200/" height="190"></a>
-                        <a href="assets/work/2.jpg"><img src="http://placekitten.com/120/120/"/></a>
-                        <a href="assets/work/3.jpg"><img src="http://placekitten.com/90/90/" height="90" width="90"></a>
-                        <a href="assets/work/4.jpg"><img src="http://placekitten.com/50/50/" height="190"></a>
-                        <a href="assets/work/5.jpg"><img src="http://placekitten.com/100/100/"></a>
-                        <a href="assets/work/6.jpg"><img src="http://placekitten.com/200/200/" height="190"></a>
-                    </div>
-                    <div class ="thumbnails">
-                        
-                    </div>
-                </div>
-                <div class= "border">
-                </div>
-                
-                <div class="description">
-                    <h2>Description</h2>
-                    <p>Dnafoknlskdnflknflkndlkfnsldnsllk</p>
-                </div>
-            </div>
-        </div>
-        
         
         <!-- Templates *****************************************************-->
         <script id="project-template" type ="text/x-handlebars-template">
-            <a href = "item-detail-{{id}}" class ="project-link">
+            <a href = "#item-detail-{{id}}" class ="project-link">
                 <div class = "projectBox">
                  
                     <div class ="projectHeader">
@@ -145,6 +65,84 @@
                     </div>
                 </div>
             </a>
+        </script>
+        
+        
+        
+        <script id="project-detail-template" type ="text/x-handlebars-template">
+            <div class="item-detail" id="item-detail-{{id}}">
+                <div class="header">
+                    <p class="date">{{date}}</p>
+                    <div class="icon">
+                        <img src="Images/{{logo}}.svg" alt="Apple Logo">
+                    </div>
+
+                    <div class="title-button-wrapper">
+                        <div class="title">
+                            <h1>{{title}}</h1>
+                            <p>{{tagline}}</p>
+                        </div>
+                        <div class="get-dropdown">
+                            <button class="button">GET IT</button>
+                            <div class="content">
+                                <a href="#">Website</a>
+                                <a href="#">App Store</a>
+                            </div>
+                            <div class ="details">
+                                <img src ="Images/triangle.svg" alt = "Triangle">
+                            </div>
+                        </div>        
+                    </div>
+                    <div class="support">
+                        <p>Support Us</p>
+                        <div class="button-container">
+                            <div class="support-button" id="facebook">
+                                <a href ="Google.com">
+                                    <img src="Images/facebook-logo.svg" alt="Facebook Logo">
+                                </a>
+                            </div>
+                            <div class="support-button" id="twitter">
+                                <img src="Images/twitter-logo.svg" alt="Twitter Logo">
+                            </div>
+                            <div class="support-button" id="github">
+                                <img src="Images/github-logo.svg" alt="Github Logo">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tech-used">
+                    <div class="tag-container">
+                        <p>Tech Used:</p>
+                        <div class="tag">Swift</div>
+                        <div class="tag">iOS</div>
+                        <div class="tag">Mobile</div>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="screenshots">
+                        <div class ="scrollView">
+                            <a href="assets/work/1.jpg"><img src="http://placekitten.com/200/200/" height="190"></a>
+                            <a href="assets/work/2.jpg"><img src="http://placekitten.com/120/120/"/></a>
+                            <a href="assets/work/3.jpg"><img src="http://placekitten.com/90/90/" height="90" width="90"></a>
+                            <a href="assets/work/4.jpg"><img src="http://placekitten.com/50/50/" height="190"></a>
+                            <a href="assets/work/5.jpg"><img src="http://placekitten.com/100/100/"></a>
+                            <a href="assets/work/6.jpg"><img src="http://placekitten.com/200/200/" height="190"></a>
+                        </div>
+                        <div class ="thumbnails">
+
+                        </div>
+                    </div>
+                    <div class= "border">
+                    </div>
+
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Dnafoknlskdnflknflkndlkfnsldnsllk</p>
+                    </div>
+                </div>
+        </div>
+
         </script>
         <!-- Templates *****************************************************-->
     
