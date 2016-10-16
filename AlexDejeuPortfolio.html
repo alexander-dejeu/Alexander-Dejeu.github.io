@@ -42,11 +42,11 @@
 
             </div>
 
-           <!-- Project Box -->
+           <!-- Project Box Template-->
             
         </div>
         
-        <div class="item-detail">
+        <div class="item-detail" id="item-detail-1">
             <div class="header">
                 <p class="date">September 2015</p>
                 <div class="icon">
@@ -129,8 +129,9 @@
         
         <!-- Templates *****************************************************-->
         <script id="project-template" type ="text/x-handlebars-template">
-             <div class = "projectBox">
-                 <a href = "details-{{id}}" class ="project-link">
+            <a href = "item-detail-{{id}}" class ="project-link">
+                <div class = "projectBox">
+                 
                     <div class ="projectHeader">
                         <h1>{{title}}</h1>
                         <p>{{date}}</p>
@@ -142,8 +143,8 @@
                     <div class = "projectFooter">
                         <img src="Images/{{logo}}.svg" alt="Apple Logo" height="20">
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </script>
         <!-- Templates *****************************************************-->
     
