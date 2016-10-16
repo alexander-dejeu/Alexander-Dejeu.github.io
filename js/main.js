@@ -17,6 +17,7 @@ for (var i in data) {
 // projects 
 // ------------------------------------------------------------
 
+//Handle clicks on any of the project-link elements
 $(".project-link").click(function(event){
     event.preventDefault();
     console.log("Clicked");
@@ -24,3 +25,9 @@ $(".project-link").click(function(event){
     console.log(id);
     $(id).addClass("show");
                         });
+$(".close-detail-button").click(function(event){
+    //Search up the DOM tree for an element with clas .item-detail
+    //Then remove the show class.
+    
+    $(this).parents(".item-detail").removeClass("show");                           
+                               })

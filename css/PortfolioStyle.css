@@ -124,6 +124,16 @@ div.projectBox:hover .projectBody p{
 .item-detail.show{
     display: block;
 }
+
+.item-detail .close-detail-button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: red;
+    right: -15px;
+    top: -15px;
+}
 .item-detail .header {
     position: relative;
     background-color: bisque;
