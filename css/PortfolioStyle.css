@@ -114,8 +114,11 @@ div.projectBox:hover .projectBody p{
     background-color: aqua;
     width: calc(100%-50);
     height: 600px;
-    display: block;
+    display: none;
     margin: 0px 25px 0px 25px;
+}
+.item-detail.show{
+    display: block;
 }
 .item-detail .header {
     position: relative;
