@@ -8,7 +8,7 @@ var projectDetailTemplate = Handlebars.compile(projectDetailSource)
 
 for (var i in data) {
     var project = projectTemplate(data[i]);
-    $(".portfolio").append(project);
+    $(".all-projects-container").append(project);
     $("body").append(projectDetailTemplate(data[i]));
 } 
 
