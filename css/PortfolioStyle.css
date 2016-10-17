@@ -131,21 +131,22 @@ body{
     text-align: center;
     position: absolute;
     left: 0; bottom: 0; right: 0;
-    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
 
 .projectBox .projectFooter .arrows{
     position: absolute;
-    left: -22px;
-    bottom: 5px;
-    margin: 0px;
-    transition-delay: 0.5s;
-    transition-duration: 200ms;
+    bottom: -20px;
+    right: 17px;
+    transition-delay: 0.25s;
+    transition-duration: 0.25s;
 
+    
 }
 div.projectBox:hover .arrows{
     left: 312px;
+    bottom: 3px;
 }
 
 div.projectBox:hover{
