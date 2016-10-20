@@ -48,7 +48,6 @@ body{
 }
 .portfolioTitle {
     margin-left: 76px;
-    
 }
 
 .portfolioTitle h1{
@@ -64,7 +63,7 @@ body{
 
 
 .portfolio .all-projects-container{
-    margin: 0px 75px 50px 75px;
+    margin: 0px calc((100% - 1116px)/2) 50px calc((100% - 1116px)/2);
     height: auto;
 }
 
@@ -168,9 +167,10 @@ div.projectBox:hover .projectBody p{
     width: calc(100%-50);
     height: 600px;
     display: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 60px;
+     overflow-y: auto;
 /*    display: block;*/
     margin: 0px 25px 0px 25px;
 }
@@ -179,14 +179,20 @@ div.projectBox:hover .projectBody p{
 }
 
 .item-detail .close-detail-button{
-    position: absolute;
-    width: 30px;
-    height: 30px;
+    position: fixed;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    background: red;
-    right: -15px;
-    top: -15px;
+    background: #F5F5F5;
+    right: 25px;
+    top: 10px;
 }
+.item-detail .close-detail-button img{
+    position: fixed;
+    top: 5px;
+    bottom: 5px;
+}
+
 .item-detail .header {
     position: relative;
     background-color: bisque;
