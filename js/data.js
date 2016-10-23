@@ -1,6 +1,6 @@
 var data = [
     {id: 1,
-     title: "IT worked!!",
+     title: "My Visual Partner",
      tagline: "It is like uber for tinder",
      date: "September 2016",
      description: "You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.",
@@ -8,7 +8,7 @@ var data = [
     }, 
     {
      id: 2,
-     title: "IT worked!!",
+     title: "Interactive Collaborative Environement",
      tagline: "It is like uber for tinder",
      date: "September 2016",
      description: "You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.",
