@@ -8,7 +8,7 @@ var data = [
     }, 
     {
      id: 2,
-     title: "Interactive Collaborative Environement",
+     title: "ICE",
      tagline: "It is like uber for tinder",
      date: "September 2016",
      description: "You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.",
