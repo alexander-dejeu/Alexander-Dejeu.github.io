@@ -469,3 +469,49 @@ div.projectBox:hover .projectBody p{
 
 
 
+.facts{
+    clear: both;
+}
+.factsTitle h1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 100;
+    margin-bottom: 0px;
+    font-size:65px;
+}
+.factsTitle .line{
+    border-top: 1px solid #D8D8D8;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 65px;
+}
+
+.all-facts-container{
+    font-weight: 100;
+}
+
+.indv-fact{
+    margin: 0px;
+    float: left;
+}
+.indv-fact h2 {
+    font-size: 65px;
+    font-weight: 100;
+}
+.indv-fact p {
+    font-size: 28px;
+    font-weight: 100;
+}
+
+
+.fact-box{
+    float: left;
+    margin: 20px;
+}
+.fact-box h1{ 
+    font-size: 48px;
+    font-weight: 100;
+}
