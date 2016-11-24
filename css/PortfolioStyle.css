@@ -486,32 +486,54 @@ div.projectBox:hover .projectBody p{
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
-    margin-bottom: 65px;
+    margin-bottom: 30px;
 }
 
 .all-facts-container{
     font-weight: 100;
+    width: 80%;
+    margin: auto;
+    margin-top: 0px;
 }
 
 .indv-fact{
     margin: 0px;
     float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
 }
 .indv-fact h2 {
     font-size: 65px;
     font-weight: 100;
+    margin: 0px;
 }
 .indv-fact p {
     font-size: 28px;
     font-weight: 100;
+    margin: 0px;
 }
 
 
 .fact-box{
     float: left;
-    margin: 20px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .fact-box h1{ 
     font-size: 48px;
     font-weight: 100;
+}
+#hobbies{
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+#hobbies h1{
+    margin: auto;
+}
+#hobbies .indv-fact{
+    display: inline-block;
 }
