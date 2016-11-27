@@ -499,8 +499,7 @@ div.projectBox:hover .projectBody p{
 .indv-fact{
     margin: 0px;
     float: left;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 25px;
     text-align: center;
 }
 .indv-fact h2 {
@@ -521,19 +520,20 @@ div.projectBox:hover .projectBody p{
     margin-top: 0px;
     margin-left: 20px;
     margin-right: 20px;
+    text-align: center;
 }
 .fact-box h1{ 
     font-size: 48px;
     font-weight: 100;
+    margin: auto;
+    margin-left: 0px;
 }
 #hobbies{
     width: 100%;
     clear: both;
     text-align: center;
 }
-#hobbies h1{
-    margin: auto;
-}
 #hobbies .indv-fact{
+    float: none;
     display: inline-block;
 }
