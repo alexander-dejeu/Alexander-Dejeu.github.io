@@ -471,6 +471,7 @@ div.projectBox:hover .projectBody p{
 
 .facts{
     clear: both;
+    height: 600px;
 }
 .factsTitle h1{
     text-align: center;
@@ -535,5 +536,41 @@ div.projectBox:hover .projectBody p{
 }
 #hobbies .indv-fact{
     float: none;
+    display: inline-block;
+}
+
+
+.contact{
+    clear: both;
+}
+.contactTitle h1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 100;
+    margin-bottom: 0px;
+    font-size:65px;
+}
+.contactTitle .line{
+    border-top: 1px solid #D8D8D8;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.contactTitle p{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.contact-me-container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.contact-box{
+    margin-left: 10px;
+    margin-right: 10px;
     display: inline-block;
 }
