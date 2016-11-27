@@ -167,8 +167,23 @@
             </a>
         </script>
         
+        <script id = "project-detail-template" type = "text/x-handlebars-template">
+            <div class="item-detail" id="item-detail-{{id}}">
+                <div class="header">
+                    <img src="Images/{{short_title}}/{{icon}}" alt="{{type}} Icon" height = "100" width="100">
+                    <p class="date">{{date}}</p>
+                </div>
+                <div class = "body">
+                    <p>{{{detailed_description}}}</p>
+                </div>
+                
+                <div class = "actionables">
+            
+                </div>
+            </div>
+        </script>
         
-        
+<!--
         <script id="project-detail-template" type ="text/x-handlebars-template">
             <div class="item-detail" id="item-detail-{{id}}">
                 <div class="close-detail-button">
@@ -247,6 +262,7 @@
         </div>
 
         </script>
+-->
         <!-- Templates *****************************************************-->
     
         
