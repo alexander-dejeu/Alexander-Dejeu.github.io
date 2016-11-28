@@ -1,9 +1,22 @@
+/********** MAJOR SECTION HEADING **********/
+/*--- Minor Section Heading ---*/
+
+/* ROBOTO STYLE GUIDE
+* 100   - Thin
+* 300   - Light
+* 400   - Regular
+* 400i  - Regular Italic
+* 500   - Medium
+NOT LOADED* 700   - Bold
+NOT LOADED* 900   - Black
+*/
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
 
-
+/********** INTRO BLOCK **********/
 .intro{
     height: 750px;
     color: #4A4A4A;
@@ -39,6 +52,8 @@ body{
 }
 
 
+
+/********** PORTFOLIO BLOCK **********/
 .portfolio {
 /*    marg/in-left: 75px;*/
 }
@@ -160,13 +175,7 @@ div.projectBox:hover .projectBody p{
 }
 
 
-
-
-
-
-
-
-
+/********** FACTS BLOCK **********/
 .facts{
     clear: both;
     height: 600px;
@@ -212,7 +221,6 @@ div.projectBox:hover .projectBody p{
     margin: 0px;
 }
 
-
 .fact-box{
     float: left;
     margin-bottom: 20px;
@@ -238,6 +246,8 @@ div.projectBox:hover .projectBody p{
 }
 
 
+
+/********** CONTACT ME BLOCK **********/
 .contact{
     clear: both;
 }
@@ -274,7 +284,7 @@ div.projectBox:hover .projectBody p{
 }
 
 
-
+/********** ITEM DETAIL VIEW **********/
 .item-detail {
     background-color: white;
     border-color: #9B9B9B;
@@ -290,9 +300,40 @@ div.projectBox:hover .projectBody p{
 /*    display: block;*/
     margin: 0px 25px 0px 25px;
 }
+.item-detail * {
+    text-align: center;
+}
 .item-detail.show{
     display: block;
 }
+
+.item-detail .header *{
+    margin: 0px;
+}
+.item-detail .header h1{
+    
+}
+.item-detail .header p{
+}
+
+.item-detail .actionables .link-to-product{
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+    border-style: solid;
+    border-color: #F6A623;
+    border-width: 1px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.item-detail .actionables .link-to-product p{
+    font-size: 30px;
+    color: #D8D8D8;
+    font-weight: 500;
+    margin: 0px;
+}
+
+
 
 .item-detail .close-detail-button{
     position: fixed;
