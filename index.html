@@ -32,30 +32,9 @@
             
             <div class = "all-projects-container">
             
-                <div class = "projectBox">
-                    <div class = "featured"> 
-                        <div class = "star">
-                            <img src="Images/Star.svg" alt="Featured Star" height="21.25">
-                            <p>Featured</p>
-                        </div>
-                    </div>
-                    <div class ="projectHeader">
-                        <h1>My Visual Partner</h1>
-                        <p>September 2016</p>
-                    </div>
-                    <div class ="projectBody">
-                        <p>You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.</p>
-                    </div>
-
-                    <div class = "projectFooter">
-                        <img src="Images/appleLogo.svg" alt="Apple Logo" height="20">
-                    </div>
-
-                </div>
+                <!-- Project Box Template-->
                 
             </div>
-
-           <!-- Project Box Template-->
             
         </div>
         
@@ -163,7 +142,14 @@
         <script id="project-template" type ="text/x-handlebars-template">
             <a href = "#item-detail-{{id}}" class ="project-link">
                 <div class = "projectBox">
-                 
+                    {{#if featured}}
+                        <div class = "featured"> 
+                            <div class = "star">
+                                <img src="Images/Star.svg" alt="Featured Star" height="21.25">
+                                <p>Featured</p>
+                            </div>
+                        </div>
+                    {{/if}}
                     <div class ="projectHeader">
                         <h1>{{title}}</h1>
                         <p>{{date}}</p>
@@ -193,9 +179,7 @@
                 <div class = "body">
                     <p>{{{detailed_description}}}</p>
                 </div>
-                
-                
- 
+        
                 <div class = "actionables">
                     {{#if live_product_link}}
                         <a href = {{live_product_link}} target = blank>
