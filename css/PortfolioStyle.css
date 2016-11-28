@@ -294,6 +294,9 @@ div.projectBox:hover .projectBody p{
     margin-top: 45px;
     text-align: center;
 }
+.contact-me-container a{
+    text-decoration: none;
+}
 
 /*--- Contact Blurb Box---*/
 .contact-box{
@@ -417,4 +420,20 @@ div.projectBox:hover .projectBody p{
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/********** FOOTER **********/
+footer{
+    background-color: #1A5874;    
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+}
+footer p{
+    color: #D8D8D8;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
 }
