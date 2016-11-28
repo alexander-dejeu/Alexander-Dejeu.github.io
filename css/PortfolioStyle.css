@@ -179,6 +179,7 @@ div.projectBox:hover .projectBody p{
 .facts{
     clear: both;
     height: 600px;
+    padding-top: 60px;
 }
 .factsTitle h1{
     text-align: center;
@@ -190,7 +191,7 @@ div.projectBox:hover .projectBody p{
 }
 .factsTitle .line{
     border-top: 1px solid #D8D8D8;
-    width: 250px;
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
@@ -201,7 +202,7 @@ div.projectBox:hover .projectBody p{
     font-weight: 100;
     width: 80%;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 40px;
 }
 
 .indv-fact{
@@ -224,7 +225,7 @@ div.projectBox:hover .projectBody p{
 .fact-box{
     float: left;
     margin-bottom: 20px;
-    margin-top: 0px;
+    margin-top: 22px;
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
@@ -243,6 +244,8 @@ div.projectBox:hover .projectBody p{
 #hobbies .indv-fact{
     float: none;
     display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -250,6 +253,7 @@ div.projectBox:hover .projectBody p{
 /********** CONTACT ME BLOCK **********/
 .contact{
     clear: both;
+    margin-top: 50px;
 }
 .contactTitle h1{
     text-align: center;
@@ -271,16 +275,27 @@ div.projectBox:hover .projectBody p{
     text-align: center;
     margin-top: 0px;
     margin-bottom: 20px;
+    color: #D8D8D8;
+    font-weight: 400;
+    font-size: 20px;
 }
 .contact-me-container{
     width: 80%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
     text-align: center;
 }
 .contact-box{
     margin-left: 10px;
     margin-right: 10px;
     display: inline-block;
+}
+/* unvisited link */
+.contact a:link, a:visited {
+    color: #4A4A4A;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 
@@ -350,27 +365,40 @@ div.projectBox:hover .projectBody p{
     border-width: 1px;
     border-radius: 3px;
     display: inline-block;
+    transition-duration: 0.5s;
 }
 .item-detail .actionables .link-to-product p{
     font-size: 30px;
     color: #D8D8D8;
     font-weight: 500;
     margin: 0px;
+    transition-duration: 0.5s;
 }
+
+.link-to-product:hover{
+    background-color: #F6A623;
+}
+.link-to-product:hover p{
+    color: #FFFFFF;
+}
+
 
 
 
 .item-detail .close-detail-button{
-    position: fixed;
+    position: absolute;
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background: #F5F5F5;
+    background: #9B9B9B;
     right: 25px;
     top: 10px;
 }
 .item-detail .close-detail-button img{
-    position: fixed;
-    top: 5px;
-    bottom: 5px;
+    width: 25px; 
+    height: 25px; 
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
 }

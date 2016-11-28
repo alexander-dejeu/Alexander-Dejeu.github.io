@@ -133,7 +133,7 @@
                     </div>
                 </a>
                 
-                <a href = "https://www.linkedin.com/in/alexander-dejeu">
+                <a href = "https://www.linkedin.com/in/alexander-dejeu" target = blank>
                     <div class = "contact-box">
                         <img src = "Images/linkedIn_icon.png">
                         <p>linkedin.com/in/alexander-dejeu</p>
@@ -182,6 +182,9 @@
         
         <script id = "project-detail-template" type = "text/x-handlebars-template">
             <div class="item-detail" id="item-detail-{{id}}">
+                <div class="close-detail-button">
+                    <img src="Images/close.svg" alt= "close">
+                </div>
                 <div class="header">
                     <img src="Images/{{short_title}}/{{icon}}" alt="{{type}} Icon" height = "100" width="100">
                     <h1 class ="title">{{title}}</h1>
@@ -192,7 +195,12 @@
                 </div>
                 
                 <div class = "actionables">
-                    <a href = "https://www.linkedin.com/in/alexander-dejeu">
+                    <a href = "https://www.linkedin.com/in/alexander-dejeu" target = blank>
+                        <div class = "link-to-product">
+                            <p>Check it out</p>
+                        </div>
+                    </a>
+                    <a href = "https://www.linkedin.com/in/alexander-dejeu" target = blank>
                         <div class = "link-to-product">
                             <p>Check it out</p>
                         </div>

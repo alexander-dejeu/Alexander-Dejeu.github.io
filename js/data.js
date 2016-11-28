@@ -24,6 +24,30 @@ var data = [
     }, 
     {
      id: 3,
+     title: "Best Mobile App Cal Hacks 3.0",
+     featured: false,
+     short_title: "DoctorWatson",
+     icon: "Icon.jpg",
+     type: "award",
+     tagline: "It is like uber for tinder",
+     date: "November 2016",
+     description: "You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.",
+     detailed_description: "Here is the super detailed description..."
+    }, 
+    {
+     id: 4,
+     title: "Doctor Watson",
+     featured: false,
+     short_title: "DoctorWatson",
+     icon: "Icon.jpg",
+     type: "iOS_app",
+     tagline: "It is like uber for tinder",
+     date: "September 2016",
+     description: "You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.",
+     detailed_description: "Here is the super detailed description..."
+    }, 
+    {
+     id: 5,
      title: "IT worked!!",
      featured: false,
      short_title: "DoctorWatson",
