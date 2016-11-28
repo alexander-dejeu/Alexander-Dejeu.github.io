@@ -8,7 +8,9 @@ var data = [
      tagline: "It is like uber for tinder",
      date: "September 2016",
      description: "You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.",
-     detailed_description: "MVP - My Visual Partner provides a system that encourages independence for getting ready for user defined events. <br /><br />MVP allows users to create and schedule events. Then the user specifies the items that are required for the event. Once the event is created the user will be promoted and have a visual checklist to insure they find all of his or her items at the events specified time."
+     detailed_description: "MVP - My Visual Partner provides a system that encourages independence for getting ready for user defined events. <br /><br />MVP allows users to create and schedule events. Then the user specifies the items that are required for the event. Once the event is created the user will be promoted and have a visual checklist to insure they find all of his or her items at the events specified time.",
+     website_link: "google.com",
+     live_product_link: "Google"
     }, 
     {
      id: 2,
@@ -20,7 +22,9 @@ var data = [
      tagline: "It is like uber for tinder",
      date: "September 2016",
      description: "You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.",
-     detailed_description: "Here is the super detailed description..."
+     detailed_description: "Here is the super detailed description...",
+     website_link: "google.com",
+     live_product_link: "Google"
     }, 
     {
      id: 3,
@@ -32,7 +36,9 @@ var data = [
      tagline: "It is like uber for tinder",
      date: "November 2016",
      description: "You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.",
-     detailed_description: "Here is the super detailed description..."
+     detailed_description: "Here is the super detailed description...",
+     website_link: "google.com",
+     live_product_link: "Google"
     }, 
     {
      id: 4,
@@ -44,7 +50,9 @@ var data = [
      tagline: "It is like uber for tinder",
      date: "September 2016",
      description: "You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.",
-     detailed_description: "Here is the super detailed description..."
+     detailed_description: "Here is the super detailed description...",
+     website_link: "google.com",
+     live_product_link: ""
     }, 
     {
      id: 5,
@@ -56,7 +64,9 @@ var data = [
      tagline: "It is like uber for tinder",
      date: "September 2016",
      description: "You can now write a very nice beautiful discritpion that includes many important details and whatnot about the project.",
-     detailed_description: "Here is the super detailed description..."
+     detailed_description: "Here is the super detailed description...",
+     website_link: "google.com",
+     live_product_link: "Google"
     }
 ];
 

@@ -194,17 +194,23 @@
                     <p>{{{detailed_description}}}</p>
                 </div>
                 
+                
+ 
                 <div class = "actionables">
-                    <a href = "https://www.linkedin.com/in/alexander-dejeu" target = blank>
-                        <div class = "link-to-product">
-                            <p>Check it out</p>
-                        </div>
-                    </a>
-                    <a href = "https://www.linkedin.com/in/alexander-dejeu" target = blank>
-                        <div class = "link-to-product">
-                            <p>Check it out</p>
-                        </div>
-                    </a>
+                    {{#if live_product_link}}
+                        <a href = {{live_product_link}} target = blank>
+                            <div class = "link-to-product">
+                                <p>Check it out</p>
+                            </div>
+                        </a>
+                    {{/if}}
+                    {{#if website_link}}
+                        <a href = "https://www.linkedin.com/in/alexander-dejeu" target = blank>
+                            <div class = "link-to-product">
+                                <p>Check it out</p>
+                            </div>
+                        </a>
+                    {{/if}}
                     
                     
                 </div>
