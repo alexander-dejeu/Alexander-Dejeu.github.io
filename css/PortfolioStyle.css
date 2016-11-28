@@ -1,4 +1,5 @@
 /********** MAJOR SECTION HEADING **********/
+/******* Section Heading *******/
 /*--- Minor Section Heading ---*/
 
 /* ROBOTO STYLE GUIDE
@@ -52,15 +53,13 @@ body{
 }
 
 
-
 /********** PORTFOLIO BLOCK **********/
-.portfolio {
-/*    marg/in-left: 75px;*/
-}
+.portfolio {}
 
 .portfolio h1{
     color: #4A4A4A;
 }
+/*--- Project Title ---*/
 .portfolioTitle {
     margin-left: 76px;
 }
@@ -76,12 +75,13 @@ body{
     margin-bottom: 65px;
 }
 
-
+/*--- Project Container ---*/
 .portfolio .all-projects-container{
     margin: 0px calc((100% - 1116px)/2) 50px calc((100% - 1116px)/2);
     height: auto;
 }
 
+/******* Project Box *******/
 .projectBox {
     position: relative;
     width: 350px;
@@ -90,12 +90,11 @@ body{
     border-radius: 10px;
     background-color:  white;
     transition-duration: 0.5s;
-/*    display: inline-block;*/
     float: left;
     margin: 10px;
 }
 
-/*Is it better practice to do .projectBody or the longer path? */
+/*--- Project Body ---*/
 .projectBox .projectBody{
     text-align: center;
     font-size: 1em;
@@ -106,10 +105,10 @@ body{
     color: #9B9B9B;
 }
 
+/*--- Header ---*/
 .projectBox .projectHeader {
     text-align: center;
 }
-
 .projectBox .projectHeader h1{
     color: #F5A623;
     margin-bottom: 0px;
@@ -125,6 +124,7 @@ body{
     color: #4A4A4A;
 }
 
+/*--- Featured ---*/
 .projectBox .featured{
     font-size: 8px;
     color: #F5A623;
@@ -132,7 +132,6 @@ body{
     position: absolute;
     right: 5px; top:5px;
 }
-
 .projectBox .featured .star{
     margin: 0px;
 }
@@ -141,28 +140,26 @@ body{
     font-size: 8px;
 }
 
+/*--- Footer ---*/
 .projectBox .projectFooter{
     text-align: center;
     position: absolute;
-    left: 0; bottom: 0; right: 0;
+    left: 0; bottom: 10px; right: 0;
     overflow-y: hidden;
-
 }
-
 .projectBox .projectFooter .arrows{
     position: absolute;
     bottom: -20px;
     right: 17px;
     transition-delay: 0.25s;
     transition-duration: 0.25s;
-
-    
 }
+
+/*--- Hover ---*/
 div.projectBox:hover .arrows{
     left: 312px;
     bottom: 3px;
 }
-
 div.projectBox:hover{
     background-color: #4A4A4A;
     color: white;
@@ -181,6 +178,8 @@ div.projectBox:hover .projectBody p{
     height: 600px;
     padding-top: 60px;
 }
+
+/*--- Title ---*/
 .factsTitle h1{
     text-align: center;
     margin-left: auto;
@@ -198,6 +197,7 @@ div.projectBox:hover .projectBody p{
     margin-bottom: 30px;
 }
 
+/*--- Container ---*/
 .all-facts-container{
     font-weight: 100;
     width: 80%;
@@ -205,6 +205,23 @@ div.projectBox:hover .projectBody p{
     margin-top: 40px;
 }
 
+/******* Fact Box *******/
+.fact-box{
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 22px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.fact-box h1{ 
+    font-size: 48px;
+    font-weight: 100;
+    margin: auto;
+    margin-left: 0px;
+} 
+
+/*--- Indvidual Fact ---*/
 .indv-fact{
     margin: 0px;
     float: left;
@@ -222,20 +239,7 @@ div.projectBox:hover .projectBody p{
     margin: 0px;
 }
 
-.fact-box{
-    float: left;
-    margin-bottom: 20px;
-    margin-top: 22px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-}
-.fact-box h1{ 
-    font-size: 48px;
-    font-weight: 100;
-    margin: auto;
-    margin-left: 0px;
-}
+/*--- Hobbies Block ---*/
 #hobbies{
     width: 100%;
     clear: both;
@@ -255,6 +259,8 @@ div.projectBox:hover .projectBody p{
     clear: both;
     margin-top: 50px;
 }
+
+/******* Contact Title *******/
 .contactTitle h1{
     text-align: center;
     margin-left: auto;
@@ -279,6 +285,8 @@ div.projectBox:hover .projectBody p{
     font-weight: 400;
     font-size: 20px;
 }
+
+/******* Contact Me Container*******/
 .contact-me-container{
     width: 80%;
     margin-left: auto;
@@ -286,12 +294,13 @@ div.projectBox:hover .projectBody p{
     margin-top: 45px;
     text-align: center;
 }
+
+/*--- Contact Blurb Box---*/
 .contact-box{
     margin-left: 10px;
     margin-right: 10px;
     display: inline-block;
 }
-/* unvisited link */
 .contact a:link, a:visited {
     color: #4A4A4A;
     font-size: 18px;
@@ -321,6 +330,7 @@ div.projectBox:hover .projectBody p{
     display: block;
 }
 
+/*--- Header ---*/
 .item-detail .header {
     margin-top: 25px;
 }
@@ -338,6 +348,7 @@ div.projectBox:hover .projectBody p{
     font-weight: 300;
 }
 
+/*--- Body ---*/
 .item-detail .body{
     color: #9B9B9B;
     font-size: 20px;
@@ -347,6 +358,7 @@ div.projectBox:hover .projectBody p{
     margin-right: 40px;
 }
 
+/******* Actionables *******/
 .item-detail .actionables{
     position:absolute;
     bottom: 25px;
@@ -356,6 +368,7 @@ div.projectBox:hover .projectBody p{
     right: 0;
 }
 
+/*--- Link To Product ---*/
 .item-detail .actionables .link-to-product{
     width: 200px;
     height: 55px;
@@ -367,24 +380,27 @@ div.projectBox:hover .projectBody p{
     display: inline-block;
     transition-duration: 0.5s;
 }
-.item-detail .actionables .link-to-product p{
+.item-detail .actionables .link-to-product p {
     font-size: 30px;
     color: #D8D8D8;
     font-weight: 500;
     margin: 0px;
     transition-duration: 0.5s;
 }
+.item-detail .actionables a {
+    text-decoration: none;
+}
+
+/*--- Hover ---*/
+.link-to-product:hover > p {
+    color: white !important;
+}
 
 .link-to-product:hover{
     background-color: #F6A623;
 }
-.link-to-product:hover p{
-    color: #FFFFFF;
-}
 
-
-
-
+/*--- Close Button ---*/
 .item-detail .close-detail-button{
     position: absolute;
     width: 45px;
