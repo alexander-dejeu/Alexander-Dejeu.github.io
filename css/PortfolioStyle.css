@@ -175,7 +175,6 @@ div.projectBox:hover .projectBody p{
 /********** FACTS BLOCK **********/
 .facts{
     clear: both;
-    height: 600px;
     padding-top: 60px;
 }
 
@@ -203,16 +202,20 @@ div.projectBox:hover .projectBody p{
     width: 80%;
     margin: auto;
     margin-top: 40px;
+    align-content: center;
+    text-align: center;
 }
 
 /******* Fact Box *******/
 .fact-box{
-    float: left;
+/*    float: left;*/
+    display: inline-block;
     margin-bottom: 20px;
     margin-top: 22px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
+    align-content: center;
 }
 .fact-box h1{ 
     font-size: 48px;
@@ -224,8 +227,10 @@ div.projectBox:hover .projectBody p{
 /*--- Indvidual Fact ---*/
 .indv-fact{
     margin: 0px;
-    float: left;
-    margin-right: 25px;
+/*    float: left;*/
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 12px;
     text-align: center;
 }
 .indv-fact h2 {
@@ -244,7 +249,9 @@ div.projectBox:hover .projectBody p{
     width: 100%;
     clear: both;
     text-align: center;
+    align-content: center;
 }
+
 #hobbies .indv-fact{
     float: none;
     display: inline-block;
