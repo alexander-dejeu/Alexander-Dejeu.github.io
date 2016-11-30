@@ -96,7 +96,7 @@
         </div>
         
         
-         <!-- ******************** COONTACT ME ******************** -->
+         <!-- ******************** CONTACT ME ******************** -->
         <div class = "contact" id = "contact">
             <div class="contactTitle">
                 <h1>Lets Talk!</h1>
@@ -126,7 +126,7 @@
                     </div>
                 </a>
                 
-                <a href = "" target = blank>
+                <a href = "/AlexanderDejeu_Resume_2016.pdf" target = blank>
                     <div class = "contact-box">
                         <img src = "Images/resume_icon.png">
                         <p>Resumé PDF</p>
@@ -191,7 +191,11 @@
                     {{#if website_link}}
                         <a href = {{website_link}} target = blank>
                             <div class = "link-to-product">
-                                <p>View Online</p>
+                                {{#if websiteIsArticle}}
+                                    <p>Full Article</p>
+                                {{else}}
+                                    <p>View Online</p>
+                                {{/if}}
                             </div>
                         </a>
                     {{/if}}
