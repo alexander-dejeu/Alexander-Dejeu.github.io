@@ -12,7 +12,7 @@ NOT LOADED* 700   - Bold
 NOT LOADED* 900   - Black
 */
 
-body{
+html, body{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
