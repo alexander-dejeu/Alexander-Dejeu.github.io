@@ -363,9 +363,9 @@ div.projectBox:hover .projectBody p{
     color: #9B9B9B;
     font-size: 20px;
     font-weight: 400;
-    margin-top: 32px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-top: 16px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 /******* Actionables *******/
