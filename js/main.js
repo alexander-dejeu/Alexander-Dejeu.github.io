@@ -30,4 +30,4 @@ $(".close-detail-button").click(function(event){
     //Then remove the show class.
     
     $(this).parents(".item-detail").removeClass("show");                           
-                               })
+                               });
