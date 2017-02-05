@@ -31,3 +31,15 @@ $(".close-detail-button").click(function(event){
     
     $(this).parents(".item-detail").removeClass("show");                           
                                });
+
+//Handle Hovers on the timeline
+$(document).ready(function() {
+  $('.content').hover(
+    function() {
+        product = data[$(this).data('content')];
+        $('.project_title').text(product.title).fadeIn('slow');
+        $('.project_desc').text(product.description).fadeIn('slow');
+        
+    }
+  );
+});
