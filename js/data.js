@@ -10,7 +10,8 @@ var data = [
      detailed_description: "MVP - My Visual Partner provides a system that encourages independence for getting ready for user defined events. <br /><br />MVP allows users to create and schedule events. Then the user specifies the items that are required for the event. Once the event is created the user will be promoted and have a visual checklist to insure they find all of his or her items at the events specified time.",
      website_link: "http://myvisualpartner.com",
      websiteIsArticle: false,
-     live_product_link: "https://itunes.apple.com/us/app/mvp-my-visual-partner/id1052876510?mt=8"
+     live_product_link: "https://itunes.apple.com/us/app/mvp-my-visual-partner/id1052876510?mt=8",
+     bg_color: '#F5515F'
     }, 
     {
      id: 2,
