@@ -16,14 +16,19 @@ NOT LOADED* 900   - Black
   font-size: 12px;
 }
 .project-left{
-  float: left;
   width: 50%;
   background-color: green;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
 }
 .project-right{
-  float: left;
   width: 50%;
   background-color: #F2F2F2;
+    position: absolute;
+    top:0;
+    right:0;
 }
 .project-right .navigation, .year, .content{
   float:none;

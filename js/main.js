@@ -37,9 +37,8 @@ $(document).ready(function() {
   $('.content').hover(
     function() {
         product = data[$(this).data('content')];
-        $('.project_title').text(product.title).fadeIn('slow');
-        $('.project_desc').text(product.description).fadeIn('slow');
-        
+        $('.project_title').text(product.title).slideDown('slow');
+        $('.project_desc').text(product.description);
     }
   );
 });
