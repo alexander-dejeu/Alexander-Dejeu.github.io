@@ -1,0 +1,20 @@
+/********** MAJOR SECTION HEADING **********/
+/******* Section Heading *******/
+/*--- Minor Section Heading ---*/
+
+/* ROBOTO STYLE GUIDE
+* 100   - Thin
+* 300   - Light
+* 400   - Regular
+* 400i  - Regular Italic
+* 500   - Medium
+NOT LOADED* 700   - Bold
+NOT LOADED* 900   - Black
+*/
+.timeline{
+  width: 100%;
+  font-size: 12px;
+}
+.project-left{
+    
+}
