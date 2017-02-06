@@ -19,6 +19,7 @@ NOT LOADED* 900   - Black
     left:0;
     height:100%;
 }
+
 .right-block{
     width: 50%;
     background-image: url('/Images/low-poly-texture-7.png');
@@ -34,4 +35,17 @@ NOT LOADED* 900   - Black
     width: 100%;
     background-color: rgba(74, 74, 74, 0.1);
     position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 32px;
+    left: 40px;
+}
+.footer a{
+    text-decoration: none;
+    margin: 0px;
+    margin-right: 16px;
 }
