@@ -20,6 +20,23 @@ NOT LOADED* 900   - Black
     height:100%;
 }
 
+.left-block h1, h2{
+    margin: 0px;
+    margin-left: 6.25%;
+    margin-right: 10.94%;
+}
+.left-block p{
+    margin-left: 6.25%;
+    margin-right: 17.19%;
+    font-size: 20px;
+}
+.left-block h1{
+    font-size: 40px;
+}
+.left-block h2{
+    font-size: 35px;
+}
+
 .right-block{
     width: 50%;
     background-image: url('/Images/low-poly-texture-7.png');
@@ -42,7 +59,7 @@ NOT LOADED* 900   - Black
 .footer{
     position: absolute;
     bottom: 32px;
-    left: 40px;
+    left: 6.25%;
 }
 .footer a{
     text-decoration: none;
