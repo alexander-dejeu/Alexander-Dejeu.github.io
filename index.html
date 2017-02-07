@@ -6,13 +6,63 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500" rel="stylesheet">
         <link rel = "stylesheet" href ="css/PortfolioStyle.css">
+        <link href="css/animate.css" rel="stylesheet">
         <title></title>
     </head>
-    
+
     <!-- ******************** BODY ******************** -->
     <body>
-    
-        
+
+      <!-- ******************** Timeline ******************** -->
+<!--
+     <div class = "timeline">
+         <div class ="project-left">
+          http://cuberto.com/projects/
+             <h1 class="project_title">Project Title</h1>
+             <h3 class="project_desc">The project description spread out over a few lines</h3>
+             <button class="call_to_action">View Product</button>
+         </div>
+          <div class ="project-right">
+            <div class = "navigation">
+
+            </div>
+            <div class = "year" >
+              <div class = "left-block">
+                <h3 class = "date">2016</h3>
+              </div>
+            </div>
+
+            <div class = "content" data-content=0>
+              <div class = "left-block">
+                <h3 class = "date">01</h3>
+              </div>
+            </div>
+            <div class = "content" data-content=1>
+              <div class = "left-block">
+                <h3 class = "date">02</h3>
+              </div>
+            </div>
+            <div class = "content" data-content=2>
+              <div class = "left-block">
+                <h3 class = "date">03</h3>
+              </div>
+            </div>
+            <div class = "content" data-content=3>
+              <div class = "left-block">
+                <h3 class = "date">04</h3>
+              </div>
+            </div>
+            <div class = "year" >
+              <div class = "left-block">
+                <h3 class = "date">2015</h3>
+              </div>
+            </div>
+
+
+           </div
+         </div>
+-->
+
          <!-- ******************** INTRO ******************** -->
         <div class = "intro">
             <div class ="text-container">
@@ -21,31 +71,31 @@
                 <p>I'm an <span class = "italics">iOS</span> and <span class = "italics">Web Engineer</span> spending the majority of my time growing my skills and producing <span class = "orange-emphasis">products.</span></p>
             </div>
         </div>
-        
-        
+
+
         <!-- ******************** PORTFOLIO ******************** -->
         <div class = "portfolio" id = "portfolio">
             <div class="portfolioTitle">
                 <h1>Portfolio</h1>
                 <div class="line"> </div>
             </div>
-            
+
             <div class = "all-projects-container">
-            
+
                 <!-- Project Box Template-->
-                
+
             </div>
-            
+
         </div>
-        
-        
+
+
          <!-- ******************** FACTS ******************** -->
         <div class = "facts" id = "facts">
             <div class="factsTitle">
                 <h1>Quick Facts</h1>
                 <div class="line"> </div>
             </div>
-            
+
             <div class = "all-facts-container">
                 <div class = "fact-box">
                     <h1>Hackathon Lover</h1>
@@ -94,8 +144,8 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
          <!-- ******************** CONTACT ME ******************** -->
         <div class = "contact" id = "contact">
             <div class="contactTitle">
@@ -103,7 +153,7 @@
                 <div class="line"> </div>
                 <p>Want to work on a project with me?</p>
             </div>
-            
+
             <div class = "contact-me-container">
                 <a href = "https://github.com/alexander-dejeu" target = blank>
                     <div class = "contact-box">
@@ -111,21 +161,21 @@
                         <p>github.com/alexander-dejeu</p>
                     </div>
                 </a>
-                
+
                 <a href = "https://www.linkedin.com/in/alexander-dejeu" target = blank>
                     <div class = "contact-box">
                         <img src = "Images/linkedIn_icon.png">
                         <p>linkedin.com/in/alexander-dejeu</p>
                     </div>
                 </a>
-                
+
                 <a href="mailto:alex@doGoodTechnology.com?Subject=Would%20love%20to%20connect" target="_top">
                     <div class = "contact-box">
                         <img src = "Images/doGoodTechnology_icon.png">
                         <p>alex@DoGoodTechnology.com</p>
                     </div>
                 </a>
-                
+
                 <a href = "/AlexanderDejeu_Resume_2016.pdf" target = blank>
                     <div class = "contact-box">
                         <img src = "Images/resume_icon.png">
@@ -134,16 +184,16 @@
                 </a>
             </div>
         </div>
-        
+
 
 <!-- ************************* TEMPLATES ************************* -->
-        
-        
+
+
         <script id="project-template" type ="text/x-handlebars-template">
             <a href = "#item-detail-{{id}}" class ="project-link">
                 <div class = "projectBox">
                     {{#if featured}}
-                        <div class = "featured"> 
+                        <div class = "featured">
                             <div class = "star">
                                 <img src="Images/Star.svg" alt="Featured Star" height="21.25">
                                 <p>Featured</p>
@@ -165,7 +215,7 @@
                 </div>
             </a>
         </script>
-        
+
         <script id = "project-detail-template" type = "text/x-handlebars-template">
             <div class="item-detail" id="item-detail-{{id}}">
                 <div class="close-detail-button">
@@ -179,7 +229,7 @@
                 <div class = "body">
                     <p>{{{detailed_description}}}</p>
                 </div>
-        
+
                 <div class = "actionables">
                     {{#if live_product_link}}
                         <a href = {{live_product_link}} target = blank>
@@ -199,23 +249,26 @@
                             </div>
                         </a>
                     {{/if}}
-                    
-                    
+
+
                 </div>
             </div>
         </script>
-        
-    
-        
+
+
+
 <!-- ************************* JAVASCRIPT ************************* -->
         <script src="js/jquery-2.0.3.min.js"></script>
         <script src ="js/handlebars-v4.0.5.js"></script>
-        
+              
+        <script src="js/jquery.lettering.js"></script>
+        <script src="js/jquery.textillate.js"></script>
+
         <script src ="js/data.js"></script>
         <script src ="js/main.js"></script>
-        
+
     </body>
-    
+
 
     <footer>
         <p>Copywrite © 2016 Alexander Dejeu. Designed and developed by Alexander Dejeu.</p>

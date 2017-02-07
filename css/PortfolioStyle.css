@@ -11,7 +11,80 @@
 NOT LOADED* 700   - Bold
 NOT LOADED* 900   - Black
 */
+.timeline{
+  width: 100%;
+  font-size: 12px;
+}
+.project-left{
+  width: 50%;
+  background-color: limegreen;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.project-right{
+  width: 50%;
+  background-color: #F2F2F2;
+    position: absolute;
+    top:0;
+    right:0;
+}
+.project-right .navigation, .year, .content{
+  float:none;
+  display: block;
+}
+.project-right .navigation{
+  height: 256px;
+}
+.project-right .year{
+  height: 90px;
+}
+.project-right .content{
+  height: 70px;
+}
+.project-right .year .date{
+  font-size: 2em;
+  text-align: center;
+}
+.project-right .content .date{
+  font-size: 1.5em;
+  text-align: center;
+}
 
+.left-block{
+  text-align: center;
+}
+
+.project-right .content:hover{
+  background-color: #E9E9E9;
+  cursor: pointer;
+}
+.project-right .content:hover .left-block{
+  background-color: #F5F5F5;
+}
+
+.left-block {
+  height: 100%;
+  width: 125px;
+  background-color: white;
+  align-content: center;
+}
+
+.left-block .date{
+  position: relative;
+  transform: rotate(-90deg);
+  top: 35%;
+}
+
+
+/*.project-right .content .date{
+  font-size: 1.5em;
+  width: 115px;
+  height: 100%;
+  background-color: white;
+  background-clip: content-box;
+}*/
 
 /********** INTRO BLOCK **********/
     .intro{
@@ -213,12 +286,12 @@ NOT LOADED* 900   - Black
         text-align: center;
         align-content: center;
     }
-    .fact-box h1{ 
+    .fact-box h1{
         font-size: 48px;
         font-weight: 100;
         margin: auto;
         margin-left: 0px;
-    } 
+    }
 
     /*--- Indvidual Fact ---*/
     .indv-fact{
@@ -368,9 +441,9 @@ NOT LOADED* 900   - Black
     .item-detail .actionables{
         position:absolute;
         bottom: 25px;
-        margin-left: auto; 
-        margin-right: auto; 
-        left: 0; 
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
         right: 0;
     }
 
@@ -417,8 +490,8 @@ NOT LOADED* 900   - Black
         top: 10px;
     }
     .item-detail .close-detail-button img{
-        width: 25px; 
-        height: 25px; 
+        width: 25px;
+        height: 25px;
         overflow: auto;
         margin: auto;
         position: absolute;
@@ -427,7 +500,7 @@ NOT LOADED* 900   - Black
 
     /********** FOOTER **********/
     footer{
-        background-color: #1A5874;    
+        background-color: #1A5874;
         position: absolute;
         width: 100%;
         text-align: center;
@@ -464,7 +537,7 @@ NOT LOADED* 900   - Black
     .intro p{
         font-size: 25px;
     }
-    
+
 }
 /*Iphone 7 */
 @media screen and (min-width: 321px) and (max-width: 375px){

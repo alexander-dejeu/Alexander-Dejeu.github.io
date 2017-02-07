@@ -10,7 +10,8 @@ var data = [
      detailed_description: "MVP - My Visual Partner provides a system that encourages independence for getting ready for user defined events. <br /><br />MVP allows users to create and schedule events. Then the user specifies the items that are required for the event. Once the event is created the user will be promoted and have a visual checklist to insure they find all of his or her items at the events specified time.",
      website_link: "http://myvisualpartner.com",
      websiteIsArticle: false,
-     live_product_link: "https://itunes.apple.com/us/app/mvp-my-visual-partner/id1052876510?mt=8"
+     live_product_link: "https://itunes.apple.com/us/app/mvp-my-visual-partner/id1052876510?mt=8",
+     bg_color: '#F5515F'
     }, 
     {
      id: 2,
@@ -24,7 +25,8 @@ var data = [
      detailed_description: "<b>Reminders</b> - For all assignments your groups put out.<br/><b>Schedule</b> - Drag and drop interface combined with syncing with your other calendars provides a one of a kind simplicity.<br/><b>Dashboard</b> - At a glance dashboard for weekly and daily views.<br/><b>Collaboration</b>- An environment to ask questions, support peers, and foster collaboration.",
      website_link: "http://dogoodtechnology.com",
      websiteIsArticle: false,
-     live_product_link: "https://itunes.apple.com/sb/app/ice-interactive-collaborative/id1030680444?mt=8"
+     live_product_link: "https://itunes.apple.com/sb/app/ice-interactive-collaborative/id1030680444?mt=8",
+    bg_color: '#9F031B'
     }, 
     {
      id: 3,
@@ -38,7 +40,8 @@ var data = [
      detailed_description: "Travel Chest plans your whole trip based solely on your budget. Submit a budget, choose a package, book and enjoy!<br/><br/>Through using the Amadeus API, which aggregates data from over 750 airlines to find you the cheapest flight to one of the top 15 travel destinations in the world. After you pick a location we show housing options, the top places to eat at near the housing option you pick, and then we show some cool things to do.",
      website_link: "https://devpost.com/software/travel-chest-pdye6a",
      websiteIsArticle: false,
-     live_product_link: ""
+     live_product_link: "",
+        bg_color: '#3023AE'
     }, 
     {
      id: 4,
@@ -52,7 +55,8 @@ var data = [
      detailed_description: "DoctorWatson utilizes the power of IMB's Watson AI to process the users naturally spoken medical complaint. Then through mapping the words and phrases through relevance we determined the best fit specialist type to assist the user. Next we parse through our database of Doctor users and find a doctor that is free and can best assist the user. We then show the best fit doctor to the user, if the user likes the doctor they can then chat and discuss the health issue.",
      website_link: "https://devpost.com/software/doctorwatson-9rpvot",
      websiteIsArticle: false,
-     live_product_link: ""
+     live_product_link: "",
+        bg_color: '#C96DD8'
     }, 
     {
      id: 5,
@@ -66,7 +70,8 @@ var data = [
      detailed_description: "High School LaVie allows students to effectively and elegantly record high school achievements. This is critically important for the college application process and prevents an \'Oh shoot\' moment when you are applying for college and you forget what spectacular things you were doing back in 9th grade. HS LaVie solves this problem :) Quickly, create, save, and view activities. Reminders, will encourage you to do little bits every so often in order to prevent forgetting or putting off recording your achievements.",
      website_link: "http://mylavie.com",
      websiteIsArticle: false,
-     live_product_link: "https://itunes.apple.com/us/app/high-school-lavie/id1086503521?mt=8"
+     live_product_link: "https://itunes.apple.com/us/app/high-school-lavie/id1086503521?mt=8",
+        bg_color: '#F5515F'
     },
     {
      id: 6,

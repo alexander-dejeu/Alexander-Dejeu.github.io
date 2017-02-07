@@ -31,3 +31,20 @@ $(".close-detail-button").click(function(event){
     
     $(this).parents(".item-detail").removeClass("show");                           
                                });
+//var $tlt = $('.project_title').textillate({ 
+//    autoStart: false,
+//    in: { effect: 'tada' }
+//    
+//});
+//Handle Hovers on the timeline
+$(document).ready(function() {
+  $('.content').hover(
+    function() {
+        product = data[$(this).data('content')];
+//        $tlt.textillate('start');   
+        $('.project_title').text(product.title);
+        $('.project_desc').text(product.description);
+        $('.project-left').css('background-color', product.bg_color);
+    }
+  );
+});
