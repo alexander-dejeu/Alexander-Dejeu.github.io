@@ -11,6 +11,9 @@
 NOT LOADED* 700   - Bold
 NOT LOADED* 900   - Black
 */
+body{
+    font-family: 'Rubik', sans-serif;
+}
 .left-block{
     width: 50%;
     background-color: white;
@@ -20,7 +23,7 @@ NOT LOADED* 900   - Black
     height:100%;
 }
 
-.left-block h1, h2{
+.left-block .alex, .desc{
     margin: 0px;
     margin-left: 6.25%;
     margin-right: 10.94%;
@@ -30,11 +33,25 @@ NOT LOADED* 900   - Black
     margin-right: 17.19%;
     font-size: 20px;
 }
-.left-block h1{
+.left-block .alex{
+    margin-top: 67px;
     font-size: 40px;
+    color: #4990E2;
+    font-weight: 400;
 }
-.left-block h2{
+.left-block .desc{
+    margin-top: 24px;
     font-size: 35px;
+}
+.orange-emphasis{
+    color: #F5A623;
+}
+.bold{
+    font-weight: 700;
+}
+.bold-green{
+    color: #01B91A;
+    font-weight: 700;
 }
 
 .right-block{
@@ -46,7 +63,52 @@ NOT LOADED* 900   - Black
     height:100%;
     color: white;
     background-size:cover;
+    margin: 0px;
 }
+.right-block .email{
+    margin-left: 9.375%;
+    margin-right: 18.28%;
+    font-size: 35px;
+}
+.right-block .email p{
+    margin-bottom: 7px;
+    margin-top: 0px;
+}
+.right-block .email .line{
+    height: 4px;
+    background-color: white; 
+    width: 100%;
+    -webkit-transition: width 0.7s ease-in-out;
+    -moz-transition: width 0.7s ease-in-out;
+    -o-transition: width 0.7s ease-in-out;
+    transition: width 0.7s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+}
+.email:hover .line {
+    width:0%;
+}
+.right-block .availability{
+    margin-left: 9.375%;
+    margin-right: 33.59375%;
+    font-size: 20px;
+}
+
+.right-block .contact-me-link{
+    position: absolute;
+    margin-left: 9.375%;
+    margin-right: 54.375%;
+    border: 3px solid white;
+    text-align: center;
+    padding: 0px;
+    height: 51px;
+}
+.right-block .contact-me-link p{
+    font-size:20px;
+}
+
+
+
 .right-block .mask{
     height: 100%;
     width: 100%;
