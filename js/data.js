@@ -11,7 +11,7 @@ var data = [
      website_link: "http://myvisualpartner.com",
      websiteIsArticle: false,
      live_product_link: "https://itunes.apple.com/us/app/mvp-my-visual-partner/id1052876510?mt=8",
-     bg_color: '#F5515F'
+     bg_color: '#F2DF07'
     }, 
     {
      id: 2,
@@ -71,7 +71,7 @@ var data = [
      website_link: "http://mylavie.com",
      websiteIsArticle: false,
      live_product_link: "https://itunes.apple.com/us/app/high-school-lavie/id1086503521?mt=8",
-        bg_color: '#F5515F'
+        bg_color: '#F2DF07'
     },
     {
      id: 6,
