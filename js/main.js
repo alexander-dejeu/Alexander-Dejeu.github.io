@@ -46,6 +46,15 @@ $.fn.extend({
 //    in: { effect: 'tada' }
 //    
 //});
+$(document).ready(function() {
+  $('.call_to_action').hover(
+    function() {
+        product = data[$(this).data('call_to_action')];
+        $('.project_title').css('color', product.bg_color);
+    }
+      );
+});
+
 //Handle Hovers on the timeline
 $(document).ready(function() {
   $('.content').hover(
@@ -63,7 +72,13 @@ $(document).ready(function() {
         }
         else{
             $('.project-left').css('color', '#ffffff');
-        }
+        };
+        
+//          $('p').hover(function(){
+//            $(this).css("color", product.bg_color);
+//        }, function(){
+//            $(this).css("color", "black");
+//        });
     }
   );
 });
