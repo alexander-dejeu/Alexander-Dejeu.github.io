@@ -159,16 +159,22 @@ NOT LOADED* 900   - Black
   position: relative;
   transform: rotate(-90deg);
   top: 35%;
+    left: 15%;
+    font-weight: bold;
+    width: 90px;
 }
 .left-block .item{
   position: relative;
   transform: rotate(-90deg);
   top: 35%;
+    left: 23%;
+    width: 70px;
+    font-weight: 400;
+    font-size: 1.5em;
 }
 
 .content-hover{
     background-color: #E9E9E9;
-    height: 70px;
 }
 .leftblock-hover{
      background-color: #F5F5F5;

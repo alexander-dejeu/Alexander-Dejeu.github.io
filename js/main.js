@@ -59,11 +59,16 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.content').mouseenter(
     function() {
-        // remove any existing 'po' classes and add the 'przed' class back
-        $('.content-hover').removeClass('content-hover').addClass('content');
-        $('.leftblock-hover').removeClass('leftblock-hover')
+        // TODO: Ask why this is not working
+        
+        if ($(this).hasClass('content-hover')){
+            return;
+        }
+        
+        $('.content-hover').removeClass('content-hover');
+        $('.leftblock-hover').removeClass('leftblock-hover');
         // for the element just hovered over, remove the 'przed' class and add 'po'
-        $(this).removeClass('content').addClass('content-hover');
+        $(this).addClass('content-hover');
         $(this).find('.left-block').addClass('leftblock-hover');
         
         
@@ -83,6 +88,7 @@ $(document).ready(function() {
             $('.project-left').css('color', '#ffffff');
         };
         
+        $('.title:eq( '+$(this).data('content')+' )').text(product.title);
 //          $('p').hover(function(){
 //            $(this).css("color", product.bg_color);
 //        }, function(){
