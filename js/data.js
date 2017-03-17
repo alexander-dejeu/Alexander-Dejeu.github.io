@@ -1,22 +1,5 @@
-//#F2DF07
-//#9F031B
-//#3023AE
-//#C96DD8
-//#5475D9
-//#00DCB7
-//#CCAF86
-//#F15056
-//#3BB3E4
-//#41CDDB
-//#F96F39
-//#FEE000
-//#3A69D1
-//#232429
-//#373E4D
-//#2D467B
-//#6D4890
-//#26D36E
-//#F25B45
+
+var colors = ["#F2DF07", "#9F031B", "#3023AE", "#C96DD8", "#5475D9", "#00DCB7", "#CCAF86", "#F15056", "#3BB3E4", "#41CDDB", "#F96F39", "#FEE000", "#3A69D1", "#232429", "#373E4D", "#2D467B", "#6D4890", "#26D36E", "#F25B45"]
 
 var data = [
     {id: 1,
@@ -31,7 +14,7 @@ var data = [
      website_link: "http://myvisualpartner.com",
      websiteIsArticle: false,
      live_product_link: "https://itunes.apple.com/us/app/mvp-my-visual-partner/id1052876510?mt=8",
-     bg_color: '#F2DF07'
+     bg_color: colors[(1 -1) % colors.length]
     }, 
     {
      id: 2,
@@ -46,7 +29,7 @@ var data = [
      website_link: "http://dogoodtechnology.com",
      websiteIsArticle: false,
      live_product_link: "https://itunes.apple.com/sb/app/ice-interactive-collaborative/id1030680444?mt=8",
-    bg_color: '#9F031B'
+    bg_color: colors[(2 -1) % colors.length]
     }, 
     {
      id: 3,

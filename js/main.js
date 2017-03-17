@@ -57,8 +57,17 @@ $(document).ready(function() {
 
 //Handle Hovers on the timeline
 $(document).ready(function() {
-  $('.content').hover(
+  $('.content').mouseenter(
     function() {
+        // remove any existing 'po' classes and add the 'przed' class back
+        $('.content-hover').removeClass('content-hover').addClass('content');
+        $('.leftblock-hover').removeClass('leftblock-hover')
+        // for the element just hovered over, remove the 'przed' class and add 'po'
+        $(this).removeClass('content').addClass('content-hover');
+        $(this).find('.left-block').addClass('leftblock-hover');
+        
+        
+        
         product = data[$(this).data('content')];
 //        $tlt.textillate('start');   
         $('.project_title').text(product.title);
