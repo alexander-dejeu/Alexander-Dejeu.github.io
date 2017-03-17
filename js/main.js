@@ -16,6 +16,27 @@ for (var i in data) {
 // These functions work with the UI elements to hide and show
 // projects 
 // ------------------------------------------------------------
+$(document).ready(function() {
+    for (var i in data) {
+        var portfolioItem = data[i]
+        $('.title:eq( '+i+' )').text(portfolioItem.title);
+    }
+    var firstItem = $('.content:eq( '+0+' )');
+    firstItem.addClass('content-hover');
+    firstItem.find('.left-block').addClass('leftblock-hover'); firstItem.find('.line').addClass('line-hover');
+    firstItem.find('.title').addClass('title-hover');
+    
+    var leftSide = $('.project-left:eq( '+0+' )');
+    leftSide.find('.project_title').text(data[0].title);
+    leftSide.find('.project_desc').text(data[0].description);
+    leftSide.css('background-color', data[0].bg_color);
+    if (data[0].bg_color == "#F2DF07" || data[0].bg_color == '#FEE000'){     
+        leftSide.css('color', '#000000');
+    }
+    else{
+        leftSide.css('color', '#ffffff');
+    };
+});
 
 //Handle clicks on any of the project-link elements
 $(".project-link").click(function(event){
