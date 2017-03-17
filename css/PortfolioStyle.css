@@ -19,7 +19,7 @@ NOT LOADED* 900   - Black
   width: 50%;
   background-color: limegreen;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;  
 }
