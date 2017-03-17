@@ -185,13 +185,33 @@ NOT LOADED* 900   - Black
     position: absolute;
     right: 0;
 }
-.right h2{
+.line{
+    height: 1px;
+    background: black;
+    width: 8%;
+    position: absolute;
+    top: 35px;
+    left: 8%;
+/*    transition-delay: 0.25s;*/
+    transition-duration: 0.25s;
+}
+.line-hover{
+        left: 8%;
+        width: 12%;
+}
+.title-hover{
+
+}
+.right .title{
     margin-left: 25%;
     margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
     line-height:70px;
     vertical-align:middle;
     font-size: 2.2em;
     font-weight: 400;
+    transition-duration: 0.25s;
 }
 
 

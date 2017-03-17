@@ -67,11 +67,13 @@ $(document).ready(function() {
         
         $('.content-hover').removeClass('content-hover');
         $('.leftblock-hover').removeClass('leftblock-hover');
+        $('.line-hover').removeClass('line-hover');
+        $('.title-hover').removeClass('title-hover');
         // for the element just hovered over, remove the 'przed' class and add 'po'
         $(this).addClass('content-hover');
         $(this).find('.left-block').addClass('leftblock-hover');
-        
-        
+        $(this).find('.line').addClass('line-hover');
+        $(this).find('.title').addClass('title-hover');
         
         product = data[$(this).data('content')];
 //        $tlt.textillate('start');   
@@ -81,7 +83,7 @@ $(document).ready(function() {
 //        $('.project_title').addClass('animated bounceOutLeft');
         $('.project_desc').text(product.description);
         $('.project-left').css('background-color', product.bg_color);
-        if (product.bg_color == "#F2DF07"){
+        if (product.bg_color == "#F2DF07" || product.bg_color == '#FEE000'){
             $('.project-left').css('color', '#000000');
         }
         else{
