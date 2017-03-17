@@ -12,7 +12,7 @@ for (var i in data) {
     $("body").append(projectDetailTemplate(data[i]));
 } 
 
-// ------------------------------------------------------------
+// -----------------------------------------------------------
 // These functions work with the UI elements to hide and show
 // projects 
 // ------------------------------------------------------------
@@ -41,24 +41,28 @@ $(document).ready(function() {
         leftSide.find('.call_to_action').css('border-color', '#ffffff');
     };
     
-    if (data[0].website_link == ""){
-        //Hide the website link button
-        leftSide.find('#site').addClass('hidden')
-        
-    }
-    else{
-        $('.hidden').removeClass('hidden');
-        leftSide.find('#site_link').attr('href',data[0].website_link);
-    }
-    if (data[0].live_product_link == ""){
-        //Hide the live product button
-        leftSide.find('#product').addClass('hidden')
-    }
-    else{
-        $('.hidden').removeClass('hidden');
-        leftSide.find('#product_link').attr('href',data[0].live_product_link);
-        //Add the link
-    }
+        if (data[0].website_link == ""){
+            //Hide the website link button
+            leftSide.find('#site').addClass('hidden')
+        }
+        else{
+            leftSide.find('#site').removeClass('hidden');
+            leftSide.find('#site_link').attr('href',data[0].website_link);
+            if (data[0].websiteIsArticle){
+                leftSide.find('#site-link-p').text("A R T I C L E")
+            }
+            else{
+                leftSide.find('#site-link-p').text("S I T E")
+            }
+        }
+        if (data[0].live_product_link == ""){
+            //Hide the live product button
+            leftSide.find('#product').addClass('hidden')
+        }
+        else{
+            leftSide.find('#product').removeClass('hidden');
+            leftSide.find('#product_link').attr('href',data[0].live_product_link);
+        }
     
     
 });
@@ -153,6 +157,31 @@ $(document).ready(function() {
         $('.buttons').animateCss('fadeIn');
         $('.project_desc').text(product.description);
         $('.project-left').css('background-color', product.bg_color);
+        
+        
+        if (product.website_link == ""){
+            //Hide the website link button
+            $('.project-left').find('#site').addClass('hidden')
+        }
+        else{
+            $('.project-left').find('#site').removeClass('hidden');
+            $('.project-left').find('#site_link').attr('href',product.website_link);
+            if (product.websiteIsArticle){
+                $('.project-left').find('#site-link-p').text("A R T I C L E")
+            }
+            else{
+                $('.project-left').find('#site-link-p').text("S I T E")
+            }
+        }
+        if (product.live_product_link == ""){
+            //Hide the live product button
+            $('.project-left').find('#product').addClass('hidden')
+        }
+        else{
+            $('.project-left').find('#product').removeClass('hidden');
+            $('.project-left').find('#product_link').attr('href',product.live_product_link);
+        }
+        
         
         // *********** DO SILLY LOGIC FOR COLOR ***********
         if (product.bg_color == "#F2DF07" || product.bg_color == '#FEE000'){
