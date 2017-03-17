@@ -146,7 +146,7 @@ var data = [
      detailed_description: "Tweet Generator (Jan 2017)",
      websiteIsArticle: false,
      website_link: "",
-     live_product_link: "http://tweet-generator-alex.herokuapp.com/",
+     live_product_link: "https://www.facebook.com/JoshuaGuideBot/",
      bg_color: colors[(9 -1) % colors.length] 
     },
     {
@@ -189,9 +189,9 @@ var data = [
      date: "November 2016",
      description: "Awarded best app at Cal Hacks 3.0 - the worlds largest collegiate hackathon for TravelChest - Travel Chest plans your whole trip based solely on your budget; just submit a budget, choose a package, book and enjoy",
      detailed_description: "Travel Chest plans your whole trip based solely on your budget. Submit a budget, choose a package, book and enjoy!<br/><br/>Through using the Amadeus API, which aggregates data from over 750 airlines to find you the cheapest flight to one of the top 15 travel destinations in the world. After you pick a location we show housing options, the top places to eat at near the housing option you pick, and then we show some cool things to do.",
-     website_link: "https://devpost.com/software/travel-chest-pdye6a",
+     website_link: "",
      websiteIsArticle: false,
-     live_product_link: "",
+     live_product_link: "https://devpost.com/software/travel-chest-pdye6a",
      bg_color: colors[(12 -1) % colors.length] 
     }, 
     {
@@ -219,9 +219,9 @@ var data = [
      date: "September 2016",
      description: "Awarded by JP Morgan at University of Pennslavania's hackathon - PennApps - for \'Beacons\' an iOS/Android app promoting civic welfare through encouraging personal responsibility and communal empathy",
      detailed_description: "Provides connections to skilled individuals in the area for those who require the completion of a specific task. The functionality of the application is divided into the medical requests, the miscellaneous utility requests, and the social requests. The user places a Beacon for a specific problem they desire completed. All individuals with the application downloaded within a preset radius and fulfilling a basic skill requirement are notified of the Beacon.",
-     website_link: "https://devpost.com/software/beacons",
+     website_link: "",
      websiteIsArticle: false,
-     live_product_link: "",
+     live_product_link: "https://devpost.com/software/beacons",
      bg_color: colors[(14 -1) % colors.length] 
     },
     {
@@ -263,9 +263,9 @@ var data = [
      date: "April 2016",
      description: "Awarded at HackBCA III for DoctorWatson, an iOS app that utilizes AI to process the users naturally spoken medical complaint and then matches the user with a relevant and available doctor",
      detailed_description: "DoctorWatson utilizes the power of IMB's Watson AI to process the users naturally spoken medical complaint. Then through mapping the words and phrases through relevance we determined the best fit specialist type to assist the user. Next we parse through our database of Doctor users and find a doctor that is free and can best assist the user. We then show the best fit doctor to the user, if the user likes the doctor they can then chat and discuss the health issue.",
-     website_link: "https://devpost.com/software/doctorwatson-9rpvot",
+     website_link: "",
      websiteIsArticle: false,
-     live_product_link: "",
+     live_product_link: "https://devpost.com/software/doctorwatson-9rpvot",
         bg_color: colors[(17 - 1) % colors.length]
     }, 
     {
