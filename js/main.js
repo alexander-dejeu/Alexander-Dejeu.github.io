@@ -32,10 +32,35 @@ $(document).ready(function() {
     leftSide.css('background-color', data[0].bg_color);
     if (data[0].bg_color == "#F2DF07" || data[0].bg_color == '#FEE000'){     
         leftSide.css('color', '#000000');
+        leftSide.find('.product-link').css('color', '#000000');
+        leftSide.find('.call_to_action').css('border-color', '#000000');
     }
     else{
         leftSide.css('color', '#ffffff');
+        leftSide.find('.product-link').css('color', '#ffffff');
+        leftSide.find('.call_to_action').css('border-color', '#ffffff');
     };
+    
+    if (data[0].website_link == ""){
+        //Hide the website link button
+        leftSide.find('#site').addClass('hidden')
+        
+    }
+    else{
+        $('.hidden').removeClass('hidden');
+        leftSide.find('#site_link').attr('href',data[0].website_link);
+    }
+    if (data[0].live_product_link == ""){
+        //Hide the live product button
+        leftSide.find('#product').addClass('hidden')
+    }
+    else{
+        $('.hidden').removeClass('hidden');
+        leftSide.find('#product_link').attr('href',data[0].live_product_link);
+        //Add the link
+    }
+    
+    
 });
 
 //Handle clicks on any of the project-link elements
@@ -62,19 +87,21 @@ $.fn.extend({
     }
 });
 
-//var $tlt = $('.project_title').textillate({ 
-//    autoStart: false,
-//    in: { effect: 'tada' }
-//    
-//});
+
 $(document).ready(function() {
   $('.call_to_action').mouseenter(
     function() {
         var selectedContent = $('.content-hover:eq( '+0+' )');
         var index = selectedContent.data('content');
-        $(this).css('background-color', '#fff');
-        $(this).css('color', data[index].bg_color);
+        if (data[index].bg_color == "#F2DF07" || data[index].bg_color == '#FEE000'){     
+            $(this).css('background-color', '#000');
+        }
+        else{
+            $(this).css('background-color', '#fff');
+        }
+        
         $(this).css('cursor', 'pointer');
+        $(this).find('a').css('color', data[index].bg_color);
     }
   );
 });
@@ -85,8 +112,15 @@ $(document).ready(function() {
         var selectedContent = $('.content-hover:eq( '+0+' )');
         var index = selectedContent.data('content');
         $(this).css('background-color', 'inherit');
-        $(this).css('color', '#fff');
         $(this).css('cursor', 'inherit');
+        if (data[index].bg_color == "#F2DF07" || data[index].bg_color == '#FEE000'){     
+            $(this).find('a').css('color', '#000');
+        }
+        else{
+            $(this).find('a').css('color', '#fff');
+        }
+         
+        
     }
   );
 });
@@ -100,39 +134,36 @@ $(document).ready(function() {
         if ($(this).hasClass('content-hover')){
             return;
         }
-        
+        // *********** ADD + REMOVE ***********
         $('.content-hover').removeClass('content-hover');
         $('.leftblock-hover').removeClass('leftblock-hover');
         $('.line-hover').removeClass('line-hover');
         $('.title-hover').removeClass('title-hover');
-        // for the element just hovered over, remove the 'przed' class and add 'po'
+
         $(this).addClass('content-hover');
         $(this).find('.left-block').addClass('leftblock-hover');
         $(this).find('.line').addClass('line-hover');
         $(this).find('.title').addClass('title-hover');
         
-        product = data[$(this).data('content')];
-//        $tlt.textillate('start');   
+        // *********** UPDATE DATA ***********
+        product = data[$(this).data('content')]; 
         $('.project_title').text(product.title);
         $('.project_title').animateCss('slideInLeft');
         $('.project_desc').animateCss('slideInUp');
         $('.buttons').animateCss('fadeIn');
-//        $('.project_title').addClass('animated bounceOutLeft');
         $('.project_desc').text(product.description);
         $('.project-left').css('background-color', product.bg_color);
+        
+        // *********** DO SILLY LOGIC FOR COLOR ***********
         if (product.bg_color == "#F2DF07" || product.bg_color == '#FEE000'){
             $('.project-left').css('color', '#000000');
+            $('.project-left').find('.product-link').css('color', '#000000');
+            $('.project-left').find('.call_to_action').css('border-color', '#000000');
         }
         else{
-            $('.project-left').css('color', '#ffffff');
+            $('.project-left').css('color', '#ffffff');$('.project-left').find('.product-link').css('color', '#ffffff');
+            $('.project-left').find('.call_to_action').css('border-color', '#ffffff');
         };
-        
-        $('.title:eq( '+$(this).data('content')+' )').text(product.title);
-//          $('p').hover(function(){
-//            $(this).css("color", product.bg_color);
-//        }, function(){
-//            $(this).css("color", "black");
-//        });
     }
   );
 });
