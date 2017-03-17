@@ -68,12 +68,27 @@ $.fn.extend({
 //    
 //});
 $(document).ready(function() {
-  $('.call_to_action').hover(
+  $('.call_to_action').mouseenter(
     function() {
-        product = data[$(this).data('call_to_action')];
-        $('.project_title').css('color', product.bg_color);
+        var selectedContent = $('.content-hover:eq( '+0+' )');
+        var index = selectedContent.data('content');
+        $(this).css('background-color', '#fff');
+        $(this).css('color', data[index].bg_color);
+        $(this).css('cursor', 'pointer');
     }
-      );
+  );
+});
+
+$(document).ready(function() {
+  $('.call_to_action').mouseleave(
+    function() {
+        var selectedContent = $('.content-hover:eq( '+0+' )');
+        var index = selectedContent.data('content');
+        $(this).css('background-color', 'inherit');
+        $(this).css('color', '#fff');
+        $(this).css('cursor', 'inherit');
+    }
+  );
 });
 
 //Handle Hovers on the timeline
@@ -101,6 +116,7 @@ $(document).ready(function() {
         $('.project_title').text(product.title);
         $('.project_title').animateCss('slideInLeft');
         $('.project_desc').animateCss('slideInUp');
+        $('.buttons').animateCss('fadeIn');
 //        $('.project_title').addClass('animated bounceOutLeft');
         $('.project_desc').text(product.description);
         $('.project-left').css('background-color', product.bg_color);
