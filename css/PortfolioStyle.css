@@ -40,7 +40,7 @@ NOT LOADED* 900   - Black
 }
 .projects-link{
     text-decoration: none;
-    color: white;
+    color: #4A4A4A;
     padding-right: 2.1875%;
     padding-left:  2.1875%;
 }
@@ -105,13 +105,13 @@ NOT LOADED* 900   - Black
   float:none;
   display: block;
 }
-.project-right .navigation{
+.navigation{
   height: 256px;
 }
-.project-right .year{
+.year{
   height: 90px;
 }
-.project-right .content{
+.content{
   height: 70px;
 }
 .project-right .year .date{
@@ -460,8 +460,6 @@ NOT LOADED* 900   - Black
         margin-right: 20px;
     }
 
-
-
     /********** CONTACT ME BLOCK **********/
     .contact{
         clear: both;
@@ -646,50 +644,151 @@ NOT LOADED* 900   - Black
         margin: 0;
     }
 
+    .desc-hide{
+        display: none;
+    }
+
 /*Iphone 5SE */
-@media screen and (max-width: 320px){
-    html,body {
-/*        background: purple;*/
+@media screen and (max-width: 769px){
+    .content{
+        background: white;
+        width: 100%;
+        height: 340px;
+        display: block;
+        clear: both;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .right{
+        height: 340px;
+        display: block;
+        position: relative;
+    }
+    .project-left{
+        display: none;
+        width: 0%;
+    }
+    .left-block{
+        display: none;
+    }
+    .project-right{
         width: 100%;
     }
-    .intro{
-        height: 550px;
-    }
-    .intro .text-container{
+    .right{
+        float: none;
         width: 100%;
-        height: 200px;
-        padding: 60px 0px 0px 50px;
+        position: block;
     }
-    .intro h1{
-        font-size: 50px;
+    .line{
+        display: block;
+        position: relative;
+        height: 1px;
+        background: black;
+        width: 8%;
+        transition-duration: 0.25s;
+        left: 4%;
+        top: 6%;
+        margin-bottom: 0;
+        margin: 0px;
+/*        margin-top: -4.5%;*/
     }
-    .intro h2{
-        font-size: 20px;
+    .line-hover{
+        position: relative;
+        display: block;
+        left: 4%;
+        margin-top: -4.5%;
+        margin-bottom: 0;
+        width: 8%;
+        margin: 0px;
     }
-    .intro p{
-        font-size: 25px;
+
+/*
+.project-left .project_desc{
+    animation-duration: 0.5s;
+    transition-timing-function: ease-in;
+    font-family: 'PT Serif', serif;
+    font-size: 2.5em;
+    margin-left: 8.333%;
+    width: 80%;
+}
+*/
+    .title{
+        margin-bottom: 0;
+        line-height:40px;
+        vertical-align:middle;
+        font-weight: 400;
+        transition-duration: 0.25s;
+        font-size: 3.0em;
+        width: 70%;
+        font-family: 'Montserrat', 'sans-serif';
+        display: block;
+        position: relative;
+        margin: 0px;
+        padding: 0;
+        top: 5%;
+        left: 4%;
+        
+    }
+    .title-hover{
+/*        margin-left: 0%;*/
+        font-weight: 400;
+        font-family: 'Montserrat', 'sans-serif';
+        font-size: 3.0em;
+/*
+        margin-top: 5%;
+        margin-left: 4%;
+*/
+        width: 70%;
+        display: block;
+        position: relative;
+        margin-bottom: 0px;
+        padding: 0;
+        top: 5%;
+        left: 4%;
+    }
+    
+    .desc{
+        display: block;
+        position: relative;
+/*
+        margin-left: 4%;
+        margin-top: 9%;
+*/
+/*        margin: 0px;*/
+        left: 4%;
+        top: 3%;
+        font-family: 'PT Serif', serif;
+        font-size: 1.7em;
+        width: 70%;
+        
     }
 
 }
 /*Iphone 7 */
+/*
 @media screen and (min-width: 321px) and (max-width: 375px){
     html, body{
-/*        background: green;*/
+        background: green;
     }
 }
+*/
 /*Iphone 7 Plus */
+/*
 @media screen and (min-width: 375px) and (max-width: 414px){
     html, body{
-/*        background: green;*/
+        background: green;
     }
 }
+*/
+/*
 
-@media screen and (min-width: 414px){
+@media screen and (min-width: 750px){
     html, body{
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
     }
 }
+*/
 
 
 
@@ -732,5 +831,5 @@ NOT LOADED* 900   - Black
     text-decoration: none;
 }
 .hidden{
-    display: none;
+    display: none
 }

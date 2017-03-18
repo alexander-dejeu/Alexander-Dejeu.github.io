@@ -16,7 +16,15 @@ for (var i in data) {
 // These functions work with the UI elements to hide and show
 // projects 
 // ------------------------------------------------------------
+
+
 $(document).ready(function() {
+    // run test on initial page load
+    checkSize();
+
+    // run test on resize of the window
+    $(window).resize(checkSize);
+    
     for (var i in data) {
         var portfolioItem = data[i]
         $('.title:eq( '+i+' )').text(portfolioItem.title);
@@ -63,9 +71,46 @@ $(document).ready(function() {
             leftSide.find('#product').removeClass('hidden');
             leftSide.find('#product_link').attr('href',data[0].live_product_link);
         }
-    
-    
 });
+
+//Function to the css rule
+function checkSize(){
+    // Set the background colors!
+    var leftBlock = $('.left-block:eq( '+0+' )');
+    if (leftBlock.css("display") == 'none' ){
+        //Do different styling for smaller screens!
+        $(".content").css("background","#abc");
+        for (var i in data) {
+            var portfolioItem = data[i]
+            $('.content:eq( '+i+' )').css("background", portfolioItem.bg_color);
+            $('.desc:eq( '+i+' )').removeClass('desc-hide');
+            $('.desc:eq( '+i+' )').text(portfolioItem.description);
+            
+            if (portfolioItem.bg_color == "#F2DF07" || portfolioItem.bg_color == '#FEE000'){
+                $('.title:eq( '+i+' )').css('color', '#000000');
+                $('.line:eq( '+i+' )').css('background-color', '#000000');
+                $('.desc:eq( '+i+' )').css('color', '#000000');
+                
+            }
+            else{
+                $('.title:eq( '+i+' )').css('color', '#ffffff');
+                $('.line:eq( '+i+' )').css('background-color', '#ffffff');
+                $('.desc:eq( '+i+' )').css('color', '#ffffff');
+                
+            }
+        }
+    }
+    else{
+        
+        // Reset the backgrounds
+        for (var i in data) {
+            $('.content:eq( '+i+' )').css("background", "");
+            $('.title:eq( '+i+' )').css('color', '');
+            $('.line:eq( '+i+' )').css('background-color', '');
+            $('.desc:eq( '+i+' )').addClass('desc-hide');
+        }
+    }
+}
 
 //Handle clicks on any of the project-link elements
 $(".project-link").click(function(event){
